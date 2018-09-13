@@ -23,6 +23,51 @@ score: %.3f 0.77180187392
 ## 机器学习教程 Scikit-learn 
 以下代码代码来至blog [SharEDITor](www.shareditor.com) 网址: www.shareditor.com
 
+#### 一元线性回归
+[code](code/scikit_learn_linear_model_demo.py)
+<pre><code>
+	import numpy as np
+	from sklearn.linear_model import LinearRegression
+
+	x = [[1],[2],[3],[4],[5],[6]]
+	y = [[1],[2.1],[2.9],[4.2],[5.1],[5.8]]
+	model = LinearRegression()
+	model.fit(x, y)
+
+	print("系数: ", model.coef_)
+	print("截距: ", model.intercept_)
+	print("回归函数：y = x * ", str(model.coef_[0][0]), " + ", str(model.intercept_[0]))
+	predicted = model.predict([13])[0]
+	print("x = 13 的预测值： ",predicted[0])
+
+</pre></code>
+
+* 画图
+<pre><code>
+	import numpy as np
+    from sklearn.linear_model import LinearRegression
+    import matplotlib.pyplot as plt
+    from matplotlib.font_manager import FontProperties
+
+    x = [[1],[2],[3],[4],[5],[6]]
+    y = [[1],[2.1],[2.9],[4.2],[5.1],[5.8]]
+    model = LinearRegression()
+    model.fit(x, y)
+    x2 = [[0], [2.5], [5.3], [9.1]]
+    y2 = model.predict(x2)
+
+    plt.figure()
+    plt.title('linear sample')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.axis([0, 10, 0, 10])
+    plt.grid(True)
+    plt.plot(x, y, 'k.')
+    plt.plot(x2, y2, 'g-')
+    plt.show()
+</pre></code>
+<img src="images/scikit_learn_linear_model_demo.png" width = "300" height = "300" alt="title" align=center />
+
 #### 多元线性回归模型 [code](code/scikit_learn_multvariable_linear_model_demo.py)
 * 用numpy的最小二乘函数计算
 <pre><code>
