@@ -1,6 +1,6 @@
 # machine-learning-notes
 
-### Linear Regression
+## Linear Regression
 #### Simple Linear Regression[一元线性回归](https://www.geeksforgeeks.org/linear-regression-python-implementation/)
 * [code](code/simple_linear_regression.py)<br>
   <img src="images/simple_linear_regression.png" width = "300" height = "300" alt="title" align=center />
@@ -20,6 +20,33 @@ intercept: 177.607131202
 score: %.3f 0.77180187392
 </pre></code>
 
-#### 梯度下降
+## 机器学习教程 Scikit-learn 
+以下代码代码来至blog [SharEDITor](www.shareditor.com) 网址: www.shareditor.com
+
+#### 多元线性回归模型 [code](code/scikit_learn_multvariable_linear_model_demo.py)
+* 用numpy的最小二乘函数计算
+<pre><code>
+	from numpy.linalg import lstsq
+    #使用numpy的最小二乘函数直接计算出β
+    X = [[1,1,1],[1,1,2],[1,2,1]]
+    y = [[6],[9],[8]]
+
+    print(lstsq(X, y)[0])
+	
+</pre></code>
+* 用scikit-learn求解多元线性回归
+<pre><code>
+    from sklearn.linear_model import LinearRegression
+
+    X = [[1,1,1],[1,1,2],[1,2,1]]
+    y = [[6],[9],[8]]
+
+    model = LinearRegression()
+    model.fit(X, y)
+    x2 = [[1,3,5]]
+    y2 = model.predict(x2)
+    print(y2)
+</pre></code>
+## 梯度下降
 * [批量梯度下降法 Batch Gradient Descent, BGD](http://kissg.me/2017/07/23/gradient-descent/)
 
