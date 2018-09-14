@@ -156,12 +156,12 @@ plt.show()
 #### K-means(k-平均或k-均值)算法 
 一种得到最广泛使用的聚类算法,[k-means算法的性能分析](https://wizardforcel.gitbooks.io/dm-algo-top10/content/k-means.html)
 * 试验
-[code](code/scikit_learn_k_means.py)
+[图](images/scikit_learn_k_means.png)
 <table> <tbody> <tr> <td align="left" width=550>
 <img src="images/scikit_learn_k_means.png"/></a>
 </td></tr></tbody></table>
 
-
+[code](code/scikit_learn_k_means.py)
 <pre><code>
 
 import matplotlib.pyplot as plt
@@ -197,12 +197,12 @@ plt.show()
 
 
 * 肘部法则
-[code](code/scikit_learn_k_means_2.py)
+[图](images/scikit_learn_k_means_2.png)
 <table> <tbody> <tr> <td align="left" width=550>
 <img src="images/scikit_learn_k_means_2.png"/></a>
 </td></tr></tbody></table>
 
-<table> <tbody> <tr><td align="left">
+[code](code/scikit_learn_k_means_2.py)
 <pre><code>
 
 import matplotlib.pyplot as plt
@@ -281,7 +281,7 @@ plt4.set_title("各簇中心点") #label doesn't work if you forgot to display t
 plt4.legend()
 plt.show()
 </pre></code>
-</td></tr></tbody></table>
+
 
 #### matplotlib绘图
 ##### 绘制多轴图
