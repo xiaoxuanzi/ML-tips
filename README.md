@@ -112,14 +112,15 @@ plt.show()
 </pre></code>
 </td></tr></tbody></table>
 
-#### matplotlib绘制多轴图
+#### matplotlib绘图
+##### 绘制多轴图
 <table> <tbody> <tr> <td align="left" width=350>
 <img src="images/matplotlib_multi_axis.png"/></a></td>
 <td align="left" width=450><br>
 <a href="code/matplotlib_multi_axis.py">[code]</a><br>
 <pre><code>
 
-From: http://www.shareditor.com/blogshow?blogId=55
+#From: http://www.shareditor.com/blogshow?blogId=55
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -142,6 +143,67 @@ draw(plt4)
 plt.show()
 </pre></code>
 </td></tr></tbody></table>
+
+
+##### 绘制3D散点图
+<table> <tbody> <tr> <td align="left" width=350>
+<img src="images/matplotlib_plot_3d_scatter.png"/></a></td>
+<td align="left" width=450><br>
+<a href="code/matplotlib_plot_3d_scatter.py">[code]</a><br>
+<pre><code>
+#from: http://www.shareditor.com/blogshow?blogId=55
+
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+import matplotlib.pyplot as plt
+
+fig = plt.figure()
+ax = fig.add_subplot(1,1,1,projection='3d')
+xx = np.linspace(0, 5, 10)
+yy = np.linspace(0, 5, 10)
+zz1 = xx
+zz2 = 2*xx
+zz3 = 3*xx
+ax.scatter(xx, yy, zz1, c='red', marker='o')
+ax.scatter(xx, yy, zz2, c='green', marker='^')
+ax.scatter(xx, yy, zz3, c='black', marker='*')
+ax.legend()
+
+plt.show()
+</pre></code>
+</td></tr></tbody></table>
+
+##### 绘制3D表面
+<table> <tbody> <tr> <td align="left" width=350>
+<img src="images/matplotlib_plot_3d_surface.png"/></a></td>
+<td align="left" width=450><br>
+<a href="code/matplotlib_plot_3d_surface.py">[code]</a><br>
+<pre><code>
+# coding:utf-8
+#from: http://www.shareditor.com/blogshow?blogId=55
+
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib import cm
+from matplotlib.ticker import LinearLocator, FormatStrFormatter
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+
+X = np.arange(-5, 5, 0.25)
+Y = np.arange(-5, 5, 0.25)
+X, Y = np.meshgrid(X, Y)
+
+Z = X**2+Y**2
+
+ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.coolwarm, linewidth=0, antialiased=False)
+
+plt.show()
+</pre></code>
+</td></tr></tbody></table>
+
+
 ## 梯度下降
 * [批量梯度下降法 Batch Gradient Descent, BGD](http://kissg.me/2017/07/23/gradient-descent/)
 
