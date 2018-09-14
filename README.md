@@ -112,6 +112,36 @@ plt.show()
 </pre></code>
 </td></tr></tbody></table>
 
+#### matplotlib绘制多轴图
+<table> <tbody> <tr> <td align="left" width=250>
+<img src="images/matplotlib_multi_axis.png"/></a></td>
+<td align="left" width=550><br>
+<a href="code/matplotlib_multi_axis.py">[code]</a><br>
+<pre><code>
+
+From: http://www.shareditor.com/blogshow?blogId=55
+import matplotlib.pyplot as plt
+import numpy as np
+
+def draw(plt):
+    plt.axis([-12, 12, -1, 1]
+    plt.grid(True)
+    xx = np.linspace(-12, 12, 1000)
+    plt.plot(xx, np.sin(xx), 'g-', label="$sin(x)$")
+    plt.plot(xx, np.cos(xx), 'r--', label="$cos(x)$")
+    plt.legend()
+plt.figure()
+plt1 = plt.subplot(2,2,1)
+draw(plt1)
+plt2 = plt.subplot(2,2,2)
+draw(plt2)
+plt3 = plt.subplot(2,2,3)
+draw(plt3)
+plt4 = plt.subplot(2,2,4)
+draw(plt4)
+plt.show()
+</pre></code>
+</td></tr></tbody></table>
 ## 梯度下降
 * [批量梯度下降法 Batch Gradient Descent, BGD](http://kissg.me/2017/07/23/gradient-descent/)
 
