@@ -5,7 +5,7 @@
 <table> <tbody> <tr> <td align="left" width=350>
 <img src="images/simple_linear_regression.png"/></a></td>
 <td align="left" width=450><br>
-<a href="code/simple_linear_regression.py">[code]</a><br>
+<a href="code/simple_linear_regression.py">code</a><br>
 * reference：
 <a href="https://zh.wikipedia.org/wiki/%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95">least square regression(最小二乘法)</a>, 
 <a href="https://www.jianshu.com/p/fcd220697182">一元线性回归的细节</a>, 
@@ -20,7 +20,7 @@
 <table> <tbody> <tr> <td align="left" width=350>
 <img src="images/polynomial_regression.png"/></a></td>
 <td align="left" width=450><br>
-<a href="code/polynomial_regression.py">[code]</a><br>
+<a href="code/polynomial_regression.py">code</a><br>
 * reference：
 <a href="https://www.jianshu.com/p/cf2b391a3c95">扩展具有基函数的线性模型, 跟线性模型是同一类</a>, 
 <pre><code>
@@ -117,7 +117,7 @@ plt.show()
 <table> <tbody> <tr> <td align="left" width=350>
 <img src="images/matplotlib_multi_axis.png"/></a></td>
 <td align="left" width=450><br>
-<a href="code/matplotlib_multi_axis.py">[code]</a><br>
+<a href="code/matplotlib_multi_axis.py">code</a><br>
 <pre><code>
 
 #From: http://www.shareditor.com/blogshow?blogId=55
@@ -149,7 +149,7 @@ plt.show()
 <table> <tbody> <tr> <td align="left" width=350>
 <img src="images/matplotlib_plot_3d_scatter.png"/></a></td>
 <td align="left" width=450><br>
-<a href="code/matplotlib_plot_3d_scatter.py">[code]</a><br>
+<a href="code/matplotlib_plot_3d_scatter.py">code</a><br>
 <pre><code>
 #from: http://www.shareditor.com/blogshow?blogId=55
 
@@ -177,14 +177,15 @@ plt.show()
 <table> <tbody> <tr> <td align="left" width=350>
 <img src="images/matplotlib_plot_3d_surface.png"/></a></td>
 <td align="left" width=450><br>
-<a href="code/matplotlib_plot_3d_surface.py">[code]</a><br>
+<a href="code/matplotlib_plot_3d_surface.py">code</a><br>
 <pre><code>
 # coding:utf-8
 #from: http://www.shareditor.com/blogshow?blogId=55
 
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
-from matplotlib.ticker import LinearLocator, FormatStrFormatter
+from matplotlib.ticker import LinearLocator,\
+FormatStrFormatter
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -197,7 +198,9 @@ X, Y = np.meshgrid(X, Y)
 
 Z = X**2+Y**2
 
-ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.coolwarm, linewidth=0, antialiased=False)
+ax.plot_surface(X, Y, Z, rstride=1,\
+ cstride=1, cmap=cm.coolwarm, linewidth=0,\
+ antialiased=False)
 
 plt.show()
 </pre></code>
