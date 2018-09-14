@@ -2,9 +2,9 @@
 
 ## Linear Regression
 #### Simple Linear Regression
-<table> <tbody> <tr> <td align="left" width=250>
+<table> <tbody> <tr> <td align="left" width=350>
 <img src="images/simple_linear_regression.png"/></a></td>
-<td align="left" width=550><br>
+<td align="left" width=450><br>
 <a href="code/simple_linear_regression.py">[code]</a><br>
 * reference：
 <a href="https://zh.wikipedia.org/wiki/%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95">least square regression(最小二乘法)</a>, 
@@ -17,9 +17,9 @@
 
 #### Polynomial regression(多项式回归)
 
-<table> <tbody> <tr> <td align="left" width=250>
+<table> <tbody> <tr> <td align="left" width=350>
 <img src="images/polynomial_regression.png"/></a></td>
-<td align="left" width=550><br>
+<td align="left" width=450><br>
 <a href="code/polynomial_regression.py">[code]</a><br>
 * reference：
 <a href="https://www.jianshu.com/p/cf2b391a3c95">扩展具有基函数的线性模型, 跟线性模型是同一类</a>, 
@@ -53,9 +53,9 @@ score: %.3f 0.77180187392
 
 </pre></code>
 * 画图
-<table> <tbody> <tr> <td align="left" width=250>
+<table> <tbody> <tr> <td align="left" width=350>
 <img src="images/scikit_learn_linear_model_demo.png"/></a></td>
-<td align="left" width=550>
+<td align="left" width=450>
 <pre><code>
 import numpy as np
 from sklearn.linear_model import LinearRegression
