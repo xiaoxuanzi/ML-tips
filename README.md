@@ -113,9 +113,9 @@ plt.show()
 </td></tr></tbody></table>
 
 #### matplotlib绘制多轴图
-<table> <tbody> <tr> <td align="left" width=250>
+<table> <tbody> <tr> <td align="left" width=350>
 <img src="images/matplotlib_multi_axis.png"/></a></td>
-<td align="left" width=550><br>
+<td align="left" width=450><br>
 <a href="code/matplotlib_multi_axis.py">[code]</a><br>
 <pre><code>
 
