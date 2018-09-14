@@ -157,9 +157,11 @@ plt.show()
 一种得到最广泛使用的聚类算法,[k-means算法的性能分析](https://wizardforcel.gitbooks.io/dm-algo-top10/content/k-means.html)
 * 试验
 [code](code/scikit_learn_k_means.py)
-<table> <tbody> <tr> <td align="left" width=350>
-<img src="images/scikit_learn_k_means.png"/></a></td>
-<td align="left" width=450>
+<table> <tbody> <tr> <td align="left" width=450>
+<img src="images/scikit_learn_k_means.png"/></a>
+</td></tr></tbody></table>
+
+<table> <tbody> <tr><td align="left" width=450>
 <pre><code>
 
 import matplotlib.pyplot as plt
@@ -197,8 +199,10 @@ plt.show()
 * 肘部法则
 [code](code/scikit_learn_k_means_2.py)
 <table> <tbody> <tr> <td align="left" width=350>
-<img src="images/scikit_learn_k_means_2.png"/></a></td>
-<td align="left" width=450>
+<img src="images/scikit_learn_k_means_2.png"/></a>
+</td></tr></tbody></table>
+
+<table> <tbody> <tr><td align="left" width=450>
 <pre><code>
 
 import matplotlib.pyplot as plt
@@ -255,9 +259,11 @@ k = 4 # 将数据分成4簇
 kmeans = KMeans(n_clusters=k) 
 kmeans.fit(X)
 
-# print(type(kmeans.cluster_centers_))
-# print(kmeans.cluster_centers_)
-# print(kmeans.labels_ )
+'''
+print(type(kmeans.cluster_centers_))
+print(kmeans.cluster_centers_)
+print(kmeans.labels_ )
+'''
 
 plt3 = plt.subplot(4,1,3)# 将4簇用不同的颜色标记
 plt3.scatter(X[:, 0], X[:, 1], c=kmeans.labels_)
