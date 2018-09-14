@@ -55,82 +55,33 @@ score: %.3f 0.77180187392
 <img src="images/scikit_learn_linear_model_demo.png"/></a></td>
 <td align="left" width=550>
 <pre><code>
-	import numpy as np
-    from sklearn.linear_model import LinearRegression
-    import matplotlib.pyplot as plt
-    from matplotlib.font_manager import FontProperties
+import numpy as np
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
+from matplotlib.font_manager import FontProperties
 
-    x = [[1],[2],[3],[4],[5],[6]]
-    y = [[1],[2.1],[2.9],[4.2],[5.1],[5.8]]
-    model = LinearRegression()
-    model.fit(x, y)
-    x2 = [[0], [2.5], [5.3], [9.1]]
-    y2 = model.predict(x2)
+x = [[1],[2],[3],[4],[5],[6]]
+y = [[1],[2.1],[2.9],[4.2],[5.1],[5.8]]
+model = LinearRegression()
+model.fit(x, y)
+x2 = [[0], [2.5], [5.3], [9.1]]
+y2 = model.predict(x2)
 
-    plt.figure()
-    plt.title('linear sample')
-    plt.xlabel('x')
-    plt.ylabel('y')
-    plt.axis([0, 10, 0, 10])
-    plt.grid(True)
-    plt.plot(x, y, 'k.')
-    plt.plot(x2, y2, 'g-')
-    plt.show()
+plt.figure()
+plt.title('linear sample')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.axis([0, 10, 0, 10])
+plt.grid(True)
+plt.plot(x, y, 'k.')
+plt.plot(x2, y2, 'g-')
+plt.show()
 </pre></code>
 </td></tr></tbody></table>
 
 #### 多元线性回归模型 [code](code/scikit_learn_multvariable_linear_model_demo.py)
 <table> <tbody> <tr><td align="left" width=400>
-* 用numpy的最小二乘函数计算<br>
-<pre><code>
-    import numpy as np
-    from sklearn.linear_model import LinearRegression
-    import matplotlib.pyplot as plt
-    from matplotlib.font_manager import FontProperties
-
-    x = [[1],[2],[3],[4],[5],[6]]
-    y = [[1],[2.1],[2.9],[4.2],[5.1],[5.8]]
-    model = LinearRegression()
-    model.fit(x, y)
-    x2 = [[0], [2.5], [5.3], [9.1]]
-    y2 = model.predict(x2)
-
-    plt.figure()
-    plt.title('linear sample')
-    plt.xlabel('x')
-    plt.ylabel('y')
-    plt.axis([0, 10, 0, 10])
-    plt.grid(True)
-    plt.plot(x, y, 'k.')
-    plt.plot(x2, y2, 'g-')
-    plt.show()
-</pre></code></td>
-<td align="left" width=400>
-<pre><code>
-    import numpy as np
-    from sklearn.linear_model import LinearRegression
-    import matplotlib.pyplot as plt
-    from matplotlib.font_manager import FontProperties
-
-    x = [[1],[2],[3],[4],[5],[6]]
-    y = [[1],[2.1],[2.9],[4.2],[5.1],[5.8]]
-    model = LinearRegression()
-    model.fit(x, y)
-    x2 = [[0], [2.5], [5.3], [9.1]]
-    y2 = model.predict(x2)
-
-    plt.figure()
-    plt.title('linear sample')
-    plt.xlabel('x')
-    plt.ylabel('y')
-    plt.axis([0, 10, 0, 10])
-    plt.grid(True)
-    plt.plot(x, y, 'k.')
-    plt.plot(x2, y2, 'g-')
-    plt.show()
-</pre></code>
-</td></tr></tbody></table>
-
+用numpy的最小二乘函数计算<br>
 <pre><code>
 	from numpy.linalg import lstsq
     #使用numpy的最小二乘函数直接计算出β
@@ -138,9 +89,10 @@ score: %.3f 0.77180187392
     y = [[6],[9],[8]]
 
     print(lstsq(X, y)[0])
-	
 </pre></code>
-* 用scikit-learn求解多元线性回归
+</td>
+<td align="left" width=400>
+用scikit-learn求解多元线性回归
 <pre><code>
     from sklearn.linear_model import LinearRegression
 
@@ -153,6 +105,8 @@ score: %.3f 0.77180187392
     y2 = model.predict(x2)
     print(y2)
 </pre></code>
+</td></tr></tbody></table>
+
 ## 梯度下降
 * [批量梯度下降法 Batch Gradient Descent, BGD](http://kissg.me/2017/07/23/gradient-descent/)
 
