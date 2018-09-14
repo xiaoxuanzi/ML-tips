@@ -112,6 +112,46 @@ plt.show()
 </pre></code>
 </td></tr></tbody></table>
 
+#### 梯度下降法
+线性回归模型计算量会非常大,随机梯度下降法用一个样本调整参数，逐渐逼近，效率高
+<table> <tbody> <tr> <td align="left" width=350>
+<img src="images/scikit_learn_sgd_regressor.png"/></a></td>
+<td align="left" width=450>
+<pre><code>
+# coding:utf-8
+#from: http://www.shareditor.com/blogshow?blogId=57
+
+import matplotlib.pyplot as plt
+from sklearn.linear_model import SGDRegressor
+from sklearn.preprocessing import StandardScaler
+
+plt.figure() # 实例化作图变量
+plt.title('single variable') # 图像标题
+plt.xlabel('x') # x轴文本
+plt.ylabel('y') # y轴文本
+plt.grid(True) # 是否绘制网格线
+
+X_scaler = StandardScaler()
+y_scaler = StandardScaler()
+X = [[50],[100],[150],[200],[250],[300]]
+y = [[150],[200],[250],[280],[310],[330]]
+
+X = X_scaler.fit_transform(X)
+y = y_scaler.fit_transform(y)
+X_test = [[40],[400]] # 用来做最终效果测试
+X_test = X_scaler.transform(X_test)
+
+plt.plot(X, y, 'k.')
+
+model = SGDRegressor()
+model.fit(X, y.ravel())
+y_result = model.predict(X_test)
+plt.plot(X_test, y_result, 'g-')
+
+plt.show()
+</pre></code>
+</td></tr></tbody></table>
+
 #### matplotlib绘图
 ##### 绘制多轴图
 <table> <tbody> <tr> <td align="left" width=350>
