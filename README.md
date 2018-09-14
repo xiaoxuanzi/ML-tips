@@ -155,7 +155,7 @@ plt.show()
 
 #### K-means(k-平均或k-均值)算法 
 一种得到最广泛使用的聚类算法,[k-means算法的性能分析](https://wizardforcel.gitbooks.io/dm-algo-top10/content/k-means.html)
-* 试验
+* 试验<br>
 [图](images/scikit_learn_k_means.png)
 <table> <tbody> <tr> <td align="left" width=550>
 <img src="images/scikit_learn_k_means.png"/></a>
@@ -196,7 +196,7 @@ plt.show()
 </pre></code>
 
 
-* 肘部法则
+* 肘部法则<br>
 [图](images/scikit_learn_k_means_2.png)
 <table> <tbody> <tr> <td align="left" width=550>
 <img src="images/scikit_learn_k_means_2.png"/></a>
