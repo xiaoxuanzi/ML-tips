@@ -4,7 +4,7 @@
 #### Simple Linear Regression
 <table> <tbody> <tr> <td align="left" width=250>
 <img src="images/simple_linear_regression.png"/></a></td>
-<td align="left" width=550>[code](code/simple_linear_regression.py)<br>
+<td align="left" width=550><br>[code](code/simple_linear_regression.py)<br>
 * reference：
 <a href="https://zh.wikipedia.org/wiki/%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95">least square regression(最小二乘法)</a>, 
 <a href="https://www.jianshu.com/p/fcd220697182">一元线性回归的细节</a>, 
@@ -18,7 +18,7 @@
 
 <table> <tbody> <tr> <td align="left" width=250>
 <img src="images/polynomial_regression.png"/></a></td>
-<td align="left" width=550>[code](code/polynomial_regression.py)<br>
+<td align="left" width=550><br>[code](code/polynomial_regression.py)<br>
 * reference：
 <a href="https://www.jianshu.com/p/cf2b391a3c95">扩展具有基函数的线性模型, 跟线性模型是同一类</a>, 
 <pre><code>
@@ -82,8 +82,10 @@ plt.show()
 #### 多元线性回归模型 [code](code/scikit_learn_multvariable_linear_model_demo.py)
 <table> <tbody> <tr><td align="left" width=400>
 用numpy的最小二乘函数计算<br>
+<br>
+<br>
 <pre><code>
-	from numpy.linalg import lstsq
+    from numpy.linalg import lstsq
     #使用numpy的最小二乘函数直接计算出β
     X = [[1,1,1],[1,1,2],[1,2,1]]
     y = [[6],[9],[8]]
@@ -94,6 +96,7 @@ plt.show()
 <td align="left" width=400>
 用scikit-learn求解多元线性回归
 <pre><code>
+
     from sklearn.linear_model import LinearRegression
 
     X = [[1,1,1],[1,1,2],[1,2,1]]
