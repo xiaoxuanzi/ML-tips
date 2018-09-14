@@ -161,7 +161,7 @@ plt.show()
 <img src="images/scikit_learn_k_means.png"/></a>
 </td></tr></tbody></table>
 
-<table> <tbody> <tr><td align="left">
+
 <pre><code>
 
 import matplotlib.pyplot as plt
@@ -194,7 +194,7 @@ plt.plot(kmeans.cluster_centers_[:,0],
 plt.show()
 
 </pre></code>
-</td></tr></tbody></table>
+
 
 * 肘部法则
 [code](code/scikit_learn_k_means_2.py)
