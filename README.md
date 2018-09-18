@@ -378,7 +378,21 @@ plt.show()
 </td></tr></tbody></table>
 
 #### Pandas使用
-[code](code/test_pandas.py)
+<table> <tbody> <tr> <td align="left" width=350>
+<img src="images/test_pandas.png"/></a></td>
+<td align="left" width=450><br>
+<a href="code/test_pandas.py">code</a><br>
+<pre><code>
+
+
+# Using pandas to quickly plot graphs
+df.plot(x='year', y=['rain_octsep', 'outflow_decfeb'])
+
+plt.show()
+
+
+</pre></code>
+</td></tr></tbody></table>
 
 
 ## 时序预测算法
