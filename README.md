@@ -377,6 +377,15 @@ plt.show()
 </pre></code>
 </td></tr></tbody></table>
 
+#### Pandas使用
+[code](code/test_pandas.py)
+
+
+## 时序预测算法
+### 方法综述
+* 时间序列预测方法<br>
+* 机器学习方法
+
 
 ## 梯度下降
 * [批量梯度下降法 Batch Gradient Descent, BGD](http://kissg.me/2017/07/23/gradient-descent/)
