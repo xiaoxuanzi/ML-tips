@@ -384,8 +384,9 @@ plt.show()
 <a href="code/test_pandas.py">code</a><br>
 <pre><code>
 
-
-# Using pandas to quickly plot graphs
+'''
+Using pandas to quickly plot graphs
+'''
 df.plot(x='year', y=['rain_octsep', 'outflow_decfeb'])
 
 plt.show()
