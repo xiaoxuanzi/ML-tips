@@ -382,8 +382,7 @@ plt.show()
 <tr> <td align="left" width=350>
 <img src="images/matplotlib_plot_vlines.png"/></a></td>
 <td align="left" width=450><br>
-<a href="code/matplotlib_plot_vlines_and_hline.py">code</a><br>
-画水平分割线
+画水平分割线 <a href="code/matplotlib_plot_vlines_and_hline.py">code</a><br>
 <pre><code>
 # coding:utf-8
 '''
@@ -411,8 +410,7 @@ if __name__ == "__main__":
 <tr> <td align="left" width=350>
 <img src="images/matplotlib_plot_hline.png"/></a></td>
 <td align="left" width=450><br>
-<a href="code/matplotlib_plot_vlines_and_hline.py">code</a><br>
-画竖直分割线
+画竖直分割线 <a href="code/matplotlib_plot_vlines_and_hline.py">code</a><br>
 <pre><code>
 # coding:utf-8
 '''
