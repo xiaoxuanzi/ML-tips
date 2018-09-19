@@ -380,7 +380,7 @@ plt.show()
 ##### 画竖直和水平分割线
 <table> <tbody> 
 <tr> <td align="left" width=350>
-<img src="images/matplotlib_plot_hlines.png"/></a></td>
+<img src="images/matplotlib_plot_hline.png"/></a></td>
 <td align="left" width=450><br>
 画水平分割线 <a href="code/matplotlib_plot_vlines_and_hline.py">code</a><br>
 <pre><code>
@@ -408,7 +408,7 @@ if __name__ == "__main__":
 </pre></code>
 </td></tr>
 <tr> <td align="left" width=350>
-<img src="images/matplotlib_plot_vline.png"/></a></td>
+<img src="images/matplotlib_plot_vlines.png"/></a></td>
 <td align="left" width=450><br>
 画竖直分割线 <a href="code/matplotlib_plot_vlines_and_hline.py">code</a><br>
 <pre><code>
