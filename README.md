@@ -444,8 +444,9 @@ if __name__ == "__main__":
 <a href="code/matplotlib_plot_axhspan_demo.py">code</a><br>
 <pre><code>
 '''
-from: https://matplotlib.org/gallery/subplots_axes_and_figures/
-axhspan_demo.html#sphx-glr-gallery-subplots-axes-and-figures-axhspan-demo-py
+from: https://matplotlib.org/gallery/
+subplots_axes_and_figures/axhspan_demo.html#
+sphx-glr-gallery-subplots-axes-and-figures-axhspan-demo-py
 '''
 import numpy as np
 import matplotlib.pyplot as plt
