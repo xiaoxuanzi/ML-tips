@@ -441,7 +441,7 @@ if __name__ == "__main__":
 <table> <tbody> <tr> <td align="left" width=350>
 <img src="images/matplotlib_plot_axhspan_demo.png"/></a></td>
 <td align="left" width=450><br>
-<a href="code/matplotlib_plot_axhspan_demo.py">code</a><a href="https://matplotlib.org/gallery/subplots_axes_and_figures/axhspan_demo.html#sphx-glr-gallery-subplots-axes-and-figures-axhspan-demo-py">from</a><br>
+<a href="code/matplotlib_plot_axhspan_demo.py">code</a> <a href="https://matplotlib.org/gallery/subplots_axes_and_figures/axhspan_demo.html#sphx-glr-gallery-subplots-axes-and-figures-axhspan-demo-py"> from</a><br>
 <pre><code>
 
 import numpy as np
