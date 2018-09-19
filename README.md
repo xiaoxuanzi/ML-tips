@@ -442,7 +442,7 @@ if __name__ == "__main__":
 <img src="images/matplotlib_plot_axhspan_demo.png"/></a></td>
 <td align="left" width=450><br>
 <a href="code/matplotlib_plot_axhspan_demo.py">code</a><br>
-[code from](https://matplotlib.org/gallery/subplots_axes_and_figures/axhspan_demo.html#sphx-glr-gallery-subplots-axes-and-figures-axhspan-demo-py)
+[from](https://matplotlib.org/gallery/subplots_axes_and_figures/axhspan_demo.html#sphx-glr-gallery-subplots-axes-and-figures-axhspan-demo-py)
 <pre><code>
 
 import numpy as np
