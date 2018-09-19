@@ -380,7 +380,7 @@ plt.show()
 ##### 画竖直和水平分割线
 <table> <tbody> 
 <tr> <td align="left" width=350>
-<img src="images/matplotlib_plot_vlines.png"/></a></td>
+<img src="images/matplotlib_plot_hlines.png"/></a></td>
 <td align="left" width=450><br>
 画水平分割线 <a href="code/matplotlib_plot_vlines_and_hline.py">code</a><br>
 <pre><code>
@@ -402,13 +402,13 @@ if __name__ == "__main__":
     plt.plot(x, y_2, "k-")
     plt.plot(x, y_3, "b-")
     plt.plot(x, y_4, "g-")
-    # plt.vlines(0, 0, 0.5, colors = "c", linestyles = "dashed")
+    #plt.vlines(0, 0, 0.5, colors = "c", linestyles = "dashed")
     plt.hlines(0.3, -10, 10, colors = "c", linestyles = "dashed")
     plt.show()
 </pre></code>
 </td></tr>
 <tr> <td align="left" width=350>
-<img src="images/matplotlib_plot_hline.png"/></a></td>
+<img src="images/matplotlib_plot_vline.png"/></a></td>
 <td align="left" width=450><br>
 画竖直分割线 <a href="code/matplotlib_plot_vlines_and_hline.py">code</a><br>
 <pre><code>
